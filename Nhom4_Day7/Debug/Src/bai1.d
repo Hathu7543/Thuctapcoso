@@ -1,4 +1,4 @@
-Src/bai3.o: ../Src/bai3.c \
+Src/bai1.o: ../Src/bai1.c \
  D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Drivers/STM32F401RE_StdPeriph_Driver/inc/stm32f401re_gpio.h \
  D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Drivers/CMSIS/Include/stm32f401re.h \
  D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Drivers/CMSIS/Include/core_cm4.h \

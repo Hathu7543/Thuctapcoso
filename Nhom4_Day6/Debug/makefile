@@ -63,8 +63,8 @@ all: main-build
 main-build: Nhom4_Day6.elf secondary-outputs
 
 # Tool invocations
-Nhom4_Day6.elf: $(OBJS) $(USER_OBJS) D:\FileSTM32\Thuctapcoso\Nhom4_Day6\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Nhom4_Day6.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\FileSTM32\Thuctapcoso\Nhom4_Day6\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Nhom4_Day6.map" -Wl,--gc-sections -static -L"D:\Download\SDK_1.0.3_NUCLEO-F401RE\SDK_1.0.3_NUCLEO-F401RE\lib_stm" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Nhom4_Day6.elf: $(OBJS) $(USER_OBJS) D:\FileSTM32\ThuctapcosoGIT\Thuctapcoso\Nhom4_Day6\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Nhom4_Day6.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\FileSTM32\ThuctapcosoGIT\Thuctapcoso\Nhom4_Day6\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Nhom4_Day6.map" -Wl,--gc-sections -static -L"D:\Download\SDK_1.0.3_NUCLEO-F401RE\SDK_1.0.3_NUCLEO-F401RE\lib_stm" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

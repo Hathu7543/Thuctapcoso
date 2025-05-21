@@ -1,0 +1,26 @@
+15:30:04 **** Build of configuration Debug for project Nhom4_Day8 ****
+make -j12 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f401retx.d" -MT"Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f401retx.o" "../Startup/startup_stm32f401retx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Drivers/CMSIS/Include" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Drivers/STM32F401RE_StdPeriph_Driver/inc" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/button" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/buzzer" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/led" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/rtos" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/sensor" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/serial" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/ucglib" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Utilities" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Drivers/CMSIS/Include" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Drivers/STM32F401RE_StdPeriph_Driver/inc" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/button" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/buzzer" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/led" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/rtos" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/sensor" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/serial" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/ucglib" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Utilities" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Drivers/CMSIS/Include" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Drivers/STM32F401RE_StdPeriph_Driver/inc" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/button" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/buzzer" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/led" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/rtos" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/sensor" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/serial" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Middle/ucglib" -I"D:/FileSTM32/Lib/SDK_1.0.3_NUCLEO-F401RE/shared/Utilities" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "Nhom4_Day8.elf" @"objects.list"  -lLibraries -mcpu=cortex-m4 -T"D:\FileSTM32\ThuctapcosoGIT\Thuctapcoso\Nhom4_Day8\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Nhom4_Day8.map" -Wl,--gc-sections -static -L"D:\FileSTM32\Lib\SDK_1.0.3_NUCLEO-F401RE\lib_stm" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Nhom4_Day8.elf
+ 
+arm-none-eabi-size   Nhom4_Day8.elf 
+arm-none-eabi-objdump -h -S  Nhom4_Day8.elf  > "Nhom4_Day8.list"
+arm-none-eabi-objcopy  -O ihex  Nhom4_Day8.elf  "Nhom4_Day8.hex"
+arm-none-eabi-objcopy  -O binary  Nhom4_Day8.elf  "Nhom4_Day8.bin"
+   text	   data	    bss	    dec	    hex	filename
+   1624	      8	   1568	   3200	    c80	Nhom4_Day8.elf
+Finished building: default.size.stdout
+ 
+Finished building: Nhom4_Day8.list
+ 
+Finished building: Nhom4_Day8.bin
+Finished building: Nhom4_Day8.hex
+ 
+ 
+
+15:30:05 Build Finished. 0 errors, 0 warnings. (took 1s.247ms)
+
